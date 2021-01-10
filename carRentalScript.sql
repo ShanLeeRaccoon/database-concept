@@ -124,3 +124,9 @@ INSERT INTO Booking (startTime, endTime, pickUpLocation, returnLocation, startDa
 
 INSERT INTO Booking (startTime, endTime, pickUpLocation, returnLocation, startDate, endDate, duration, userID, carID, cost)
   VALUES ('06:00:00', '18:00:00', 'RMIT', 'RMIT', '2020-12-02', '2020-12-07', 132, 6, 10, 10560);
+
+INSERT INTO Booking (startTime, endTime, pickUpLocation, returnLocation, startDate, endDate, duration, userID, carID, cost)
+  VALUES ('06:00:00', '16:00:00', 'RMIT', 'PullmanHotel', '2021-01-02', '2020-01-02', 10, 1, 1, 120);
+
+INSERT INTO Booking (startTime, endTime, pickUpLocation, returnLocation, startDate, endDate, duration, userID, carID, cost)
+  VALUES ('06:00:00', '18:00:00', 'RMIT', 'SunriseCity', '2020-12-02', '2020-12-07', 132, 4, 7, 2640);
