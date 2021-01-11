@@ -124,12 +124,12 @@ WHERE cost >= 80 AND cost <= 500;
 
 -- Update booking start time by bookingID (update booking startDate to '2020-11-27' and startTime to '14:00:00' that bookingID = 1)
 UPDATE Booking
-SET startTime = '14:00:00' AND startDate = '2020-11-27' AND duration = '48' AND cost = 960
+SET startTime = '14:00:00', startDate = '2020-11-27', duration = 48, cost = 960
 WHERE bookingID = 1;
 
 -- Update booking end time by bookingID (update booking endDate to '2020-11-28' and endTime to '21:00:00' that bookingID = 2)
 UPDATE Booking
-SET endTime = '21:00:00' AND endDate = '2020-11-28' AND duration = '11' AND cost = 88
+SET endTime = '21:00:00', endDate = '2020-11-28', duration = 11, cost = 88
 WHERE bookingID = 2;
 
 -- Update booking start location by bookingID (update booking pickUpLocation to 'PullmanHotel' that bookingID = 3)
