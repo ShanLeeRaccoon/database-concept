@@ -1,3 +1,6 @@
+-- Author: Lee Ping Shan(s3635413)
+-- The below queries has been applied to the application to interact with the database
+-- The below queries is compatible with MySQL environment and has been tested without any errors
 
 
 -- USER TABLE--
@@ -30,6 +33,7 @@ WHERE userID = 2;
 
 -- Delete user by userID (delete user that userID = 10. Note that any bookings that created by deleted user will be deleted too)
 DELETE FROM User WHERE userID=10;
+
 
 -- CAR TABLE--
 
@@ -92,6 +96,7 @@ WHERE brand = 'Mazda' AND model = '6';
 -- Delete car by carID (delete car that carID = 10. Note that any bookings that involved deleted car will be deleted too)
 DELETE FROM Car WHERE carID=10;
 
+
 -- BOOKING TABLE--
 
 
@@ -144,6 +149,7 @@ WHERE bookingID = 3;
 
 -- Delete booking by bookingID
 DELETE FROM Booking WHERE bookingID=3;
+
 
 -- DATA ANALYSIS--
 

@@ -1,3 +1,8 @@
+-- Author: Lee Ping Shan(s3635413)
+-- This script has been used by the team to generate database in GCP(Google Cloud Platform) SQL database
+-- The script is compatible with MySQL environment and has been tested without any errors
+
+
 CREATE DATABASE db_car_service;
 
 USE db_car_service;
