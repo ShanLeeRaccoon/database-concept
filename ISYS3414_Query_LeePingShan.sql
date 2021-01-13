@@ -88,7 +88,7 @@ UPDATE Car
 SET status = 'available'
 WHERE brand = 'Porsche';
 
--- Update car rate by car brand and model (update car rate to 30 that brand = porsche and model = macan)
+-- Update car rate by car brand and model (update car rate to 12 that brand = Mazda and model = 6)
 UPDATE Car
 SET rate = 12
 WHERE brand = 'Mazda' AND model = '6';
@@ -163,19 +163,19 @@ SELECT COUNT(*) FROM Car;
 -- Get booking amount
 SELECT COUNT(*) FROM Booking;
 
--- Get users age between 18 and 30
+-- Get user amount that age between 18 and 30
 SELECT COUNT(*) FROM User 
 WHERE age BETWEEN 18 AND 30;
 
--- Get user age between 31 and 50
+-- Get user amount that age between 31 and 50
 SELECT COUNT(*) FROM User 
 WHERE age BETWEEN 31 AND 50;
 
--- Get users age between 51 and 70
+-- Get user amount that age between 51 and 70
 SELECT COUNT(*) FROM User 
 WHERE age BETWEEN 51 AND 70;
 
--- Get users age above 70
+-- Get user amount that age above 70
 SELECT COUNT(*) FROM User 
 WHERE age >70;
 
@@ -183,7 +183,7 @@ WHERE age >70;
 SELECT MIN(age) FROM User;
 
 -- Get maximum user age
-SELECT max(age) FROM User;
+SELECT MAX(age) FROM User;
 
 -- Get available car amount
 SELECT COUNT(*) FROM Car
@@ -193,9 +193,9 @@ WHERE status = 'available';
 SELECT COUNT(*) FROM Car
 WHERE status <> 'available';
 
--- Get car above selected rate amount (Above 10 USD/H in this sample query)
+-- Get car amount that above selected rate  (Above 10 USD/H in this sample query)
 SELECT COUNT(*) FROM Car
-WHERE rate >= 10;
+WHERE rate > 10;
 
 -- Get lastest 7 bookings with user names and car models
 SELECT B.bookingID, B.startDate, B.pickUpLocation, B.duration, B.cost, CONCAT(U.fName,' ', U.lName) AS UserName, CONCAT(C.brand,' ', C.model) AS Car FROM Booking B, Car C, User U 
